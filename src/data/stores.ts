@@ -1,5 +1,6 @@
 import type { Hours, Store } from "./types";
 import { MORE_STORES } from "./more-stores";
+import { EXTERNAL_STORES } from "./external-stores";
 
 const H24: Hours = { kind: "24h" };
 const UNKNOWN: Hours = { kind: "unknown" };
@@ -3942,4 +3943,4 @@ const BASE_CATALOG: Store[] = [
   },
 ];
 
-export const CATALOG: Store[] = [...BASE_CATALOG, ...MORE_STORES];
+export const CATALOG: Store[] = [...BASE_CATALOG, ...MORE_STORES, ...EXTERNAL_STORES];
