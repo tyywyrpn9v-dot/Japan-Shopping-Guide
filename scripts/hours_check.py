@@ -3,6 +3,8 @@
 
 No AI. Standard library only. This does not edit src/data/stores.ts.
 A wrong parse must not overwrite the guide people actually see.
+LocationSmart and NAVITIME may fill gaps in scripts/external_fill.py.
+If the same store is already in the official catalog, the official row wins.
 
 What it can read:
   - Tokyo Shirts store list (BRICK HOUSE rows)
@@ -49,6 +51,12 @@ PROBES = [
     ("seria", "https://shop.seria-group.com/seria/arealist", "地圖頁，程式讀不到地址。"),
     ("watts", "https://www.watts-jp.com/shop/", "搜尋頁。"),
     ("cando", "https://en.shopinfo.cando-web.co.jp/all/?page=1", "分頁清單，每月只記第一頁是否打得開。"),
+    ("cando-page4", "https://en.shopinfo.cando-web.co.jp/all/?page=4", "你提供的 Can Do 第 4 頁。只記是否打得開。"),
+    ("chiikawa-info-home", "https://chiikawa-info.jp", "ちいかわ總站。店頁多是圖片。"),
+    ("navitime-0206018", "https://japantravel.navitime.com/zh-tw/area/jp/destinations/A00/spot/?categoryCode=0206018", "NAVITIME 指定分類。常回 403。"),
+    ("japanshopping", "https://japanshopping.org/zh-TW/search/shops/", "日本購物搜尋。只記是否打得開。"),
+    ("locationsmart", "https://www.locationsmart.org/", "ロケスマ首頁。只記是否打得開，不抄分店地址。"),
+    ("locationsmart-chains", "https://www.locationsmart.org/ttype/all.html", "ロケスマ全連鎖名單。只記是否打得開，不抄十萬間分店。"),
 ]
 
 
@@ -173,6 +181,31 @@ def compare(catalog: list[tuple[str, str]], site: list[tuple[str, str]]) -> str:
     return "changed"
 
 
+def brand_finders() -> list[tuple[str, str, str]]:
+    path = ROOT / "src" / "data" / "brands.ts"
+    if not path.is_file():
+        return []
+    text = path.read_text(encoding="utf-8")
+    found: list[tuple[str, str, str]] = []
+    for block in re.split(r"\n  \{", text)[1:]:
+        id_m = re.search(r'id: "([^"]+)"', block)
+        url_m = re.search(r'finder: "([^"]+)"', block)
+        if id_m and url_m:
+            found.append((f"finder-{id_m.group(1)}", url_m.group(1), "品牌官網分店頁。只記錄是否打得開，不覆寫名冊。"))
+    return found
+
+
+def probe_targets() -> list[tuple[str, str, str]]:
+    seen: set[str] = set()
+    out: list[tuple[str, str, str]] = []
+    for name, url, note in [*PROBES, *brand_finders()]:
+        if url in seen:
+            continue
+        seen.add(url)
+        out.append((name, url, note))
+    return out
+
+
 def main() -> None:
     rows = catalog_rows()
     report: dict = {
@@ -223,7 +256,7 @@ def main() -> None:
         )
         time.sleep(1)
 
-    for name, url, note in PROBES:
+    for name, url, note in probe_targets():
         status, body = fetch(url)
         report["probes"].append(
             {
