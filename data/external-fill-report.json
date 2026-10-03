@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-03T12:56:30Z",
+  "policy": "LocationSmart and NAVITIME may fill gaps. Official catalog wins on the same URL or same brand and store name.",
+  "navitime": [
+    {
+      "url": "https://japantravel.navitime.com/zh-tw/area/jp/destinations/A00/spot/?categoryCode=0206",
+      "fetchStatus": 403,
+      "bytes": 0
+    },
+    {
+      "url": "https://japantravel.navitime.com/zh-tw/area/jp/destinations/A00/spot/?categoryCode=0206018",
+      "fetchStatus": 403,
+      "bytes": 0
+    }
+  ],
+  "locationSmartIds": 63245,
+  "detailRequests": 8000,
+  "added": 1174,
+  "skippedAsOfficial": 10,
+  "streetAddress": false
+}
