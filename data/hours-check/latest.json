@@ -1,0 +1,370 @@
+{
+  "checkedAt": "2026-10-03T00:13:57.867678+00:00",
+  "rewritesCatalog": false,
+  "brickhouse": [
+    {
+      "id": "brick-sapporo-naebo",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0063/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "10:00-21:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-sendai-tapio",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0203/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "20:00"
+        ]
+      ],
+      "siteHours": "10:00~20:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "20:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-shimbashi",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0173/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "20:00"
+        ],
+        [
+          "11:00",
+          "20:00"
+        ]
+      ],
+      "siteHours": "10:00-20:00 (土日祝 11:00-20:00)",
+      "siteSpans": [
+        [
+          "10:00",
+          "20:00"
+        ],
+        [
+          "11:00",
+          "20:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-kinshicho",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0310/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "10:00-21:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-omori",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0233/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "10:00-21:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-yokohama",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0160/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "20:00"
+        ],
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "10:00-20:00(土日祝 10:00-21:00)",
+      "siteSpans": [
+        [
+          "10:00",
+          "20:00"
+        ],
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-sakae",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0325/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "20:30"
+        ]
+      ],
+      "siteHours": "10：00ｰ20:30",
+      "siteSpans": [
+        [
+          "10:00",
+          "20:30"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-nagoya-sunroad",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0291/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "20:30"
+        ]
+      ],
+      "siteHours": "10：00ｰ20：30",
+      "siteSpans": [
+        [
+          "10:00",
+          "20:30"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-umeda",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0228/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "10:00-21:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-namba",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0244/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "10:00-21:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-kuzuha",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0302/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "10:00",
+          "20:00"
+        ],
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "siteHours": "平日 10:00-20:00/土日祝 10:00-21:00",
+      "siteSpans": [
+        [
+          "10:00",
+          "20:00"
+        ],
+        [
+          "10:00",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "brick-hakata",
+      "url": "https://www.tokyo-shirt.co.jp/shop/store/o0276/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "09:30",
+          "21:00"
+        ]
+      ],
+      "siteHours": "9:30-21:00",
+      "siteSpans": [
+        [
+          "09:30",
+          "21:00"
+        ]
+      ],
+      "status": "match"
+    }
+  ],
+  "mogumogu": [
+    {
+      "id": "mogu-fushimi",
+      "url": "https://www.chiikawamogumogu.jp/stores/fushimi/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "09:30",
+          "17:30"
+        ]
+      ],
+      "siteHours": "営業時間： 9:30～17:30",
+      "siteSpans": [
+        [
+          "09:30",
+          "17:30"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "mogu-kawagoe",
+      "url": "https://www.chiikawamogumogu.jp/stores/kawagoe/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "09:30",
+          "17:30"
+        ]
+      ],
+      "siteHours": "営業時間： 9:30～17:30",
+      "siteSpans": [
+        [
+          "09:30",
+          "17:30"
+        ]
+      ],
+      "status": "match"
+    },
+    {
+      "id": "mogu-otaru",
+      "url": "https://www.chiikawamogumogu.jp/stores/otaru/",
+      "fetchStatus": 200,
+      "catalog": [
+        [
+          "09:30",
+          "17:30"
+        ]
+      ],
+      "siteHours": "営業時間： 9:30～17:30",
+      "siteSpans": [
+        [
+          "09:30",
+          "17:30"
+        ]
+      ],
+      "status": "match"
+    }
+  ],
+  "probes": [
+    {
+      "name": "chiikawa-info",
+      "url": "https://chiikawa-info.jp/ck_land.html",
+      "fetchStatus": 403,
+      "bytes": 0,
+      "note": "頁面多是圖片，程式也常被 403。",
+      "parsed": false
+    },
+    {
+      "name": "sekaido",
+      "url": "https://www.sekaido.co.jp/store/77/",
+      "fetchStatus": 403,
+      "bytes": 0,
+      "note": "店頁會擋簡單程式。",
+      "parsed": false
+    },
+    {
+      "name": "kiddyland",
+      "url": "https://www.kiddyland.co.jp/shoplist/",
+      "fetchStatus": 200,
+      "bytes": 84221,
+      "note": "HTML 讀得到，但每店版面不同，未自動改時間。",
+      "parsed": false
+    },
+    {
+      "name": "itoya",
+      "url": "https://www.ito-ya.co.jp/ginza",
+      "fetchStatus": 200,
+      "bytes": 54415,
+      "note": "HTML 讀得到，未自動改時間。",
+      "parsed": false
+    },
+    {
+      "name": "kawachi",
+      "url": "https://gakubuchi.jp/shop/",
+      "fetchStatus": 200,
+      "bytes": 48755,
+      "note": "HTML 讀得到，未自動改時間。",
+      "parsed": false
+    },
+    {
+      "name": "bakery",
+      "url": "https://chiikawabakery.jp/",
+      "fetchStatus": 200,
+      "bytes": 83689,
+      "note": "可能被 403。讀得到也不自動改，以免快閃店結束仍被寫進名冊。",
+      "parsed": false
+    }
+  ],
+  "summary": {
+    "match": 15
+  }
+}
